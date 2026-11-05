@@ -1,0 +1,15 @@
+// Name: Ayush Kumar, rollno: 2510303153, id: BCS2025554, Assignment: Experiment 4, Task: Task 2
+class Main {
+    static int fact(int n) {
+        int f = 1;
+        for (int i = 1; i <= n; i++)
+            f *= i;
+        return f;
+    }
+    static int nPr(int n, int r) {
+        return fact(n) / fact(n - r);
+    }
+    public static void main(String[] args) {
+        System.out.println("5P2 = " + nPr(5, 2));
+    }
+}
